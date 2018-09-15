@@ -1,0 +1,650 @@
+/*
+* @Author: lenovo
+* @Date:   2018-08-01 09:49:17
+* @Last Modified by:   lenovo
+* @Last Modified time: 2018-09-01 17:34:34
+*/
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.head{
+	width: 100%;
+	height: 44px;
+	background: #2F2F2F;
+}
+.head .vivo{
+	float: left;
+	height: 44px;
+}
+.container1{
+	width: 1200px;
+	height: 100%;
+	background: #2f2f2f;
+	/* 块元素在块元素中水平居中：外边距 */
+	margin: 0 auto;
+}
+.head .xuanxiangkuang{
+	width: 950px;
+	height: 44px;
+	float: right;
+	/* margin-right:50px; */
+	background: #2f2f2f;
+}
+.head .xuanxiangkuang .xuanxiang{
+	width: 94px;
+	height: 44px;
+	float: left;
+	font-size: 10px;
+	text-align: center;
+	line-height: 44px;
+	background:#2F2F2F; 
+	color:#FFFFFF; 
+}
+.head .xuanxiangkuang .xuanxiang a{
+	font-size: 12px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.head .xuanxiangkuang .sousuo0{
+	margin: 0px;
+	margin-left: 170px;
+	height: 44px;
+}
+.head .xuanxiangkuang .lianxi{
+	margin-left: 40px;
+	height: 44px;
+}
+.banner0{
+	width: 100%;
+	height: 523px;
+	/* background-image: url('../img/大背景0.jpg'); */
+	/* 覆盖 */
+	/* background-size: cover;
+	background-position: bottom center;   有疑问  */
+	position: relative;
+}
+.banner0 img{
+	width: 100%;
+	height: 523px;
+	display: block;
+	opacity: 1;
+	position: absolute;
+	top:0;
+	left: 0;
+}
+.banner0 .contain{
+	/* width: 1200px; */
+	height: 100%;
+	/* 块元素在块元素中水平居中：外边距 */
+	margin: 0 auto;
+	
+}
+.banner0 .leftbtn{
+	width: 40px;
+	height:70px ;
+	background-image: url('../img/左右按钮.png');
+	background-position: -83px 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto 0;
+	/* 为了83-86水平居中 */
+	right: 925px;
+	z-index: 1;
+}
+.leftbtn:hover{
+	background-position: 0 0px;
+}
+.banner0 .rightbtn{
+	width: 40px;
+	height:70px ;
+	background-image: url('../img/左右按钮.png');
+	background-position: -126px 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto 0;
+	right: 0;
+}
+/* 鼠标移上的效果 */
+.rightbtn:hover{
+	background-position: -42px 0px;
+}
+.banner0 .list{
+	width: 200px;
+	height: 482px;
+	background: rgba(255, 255, 255, 0.6);
+	left: 50px;
+	top: 17px;
+	position: absolute;
+	/* overflow: hidden; */
+}
+.banner0 .list .page{
+	width: 100%;
+	height: 60px;
+	/* margin-top: 31px; */
+}
+.banner0 .list .page a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: #000;
+	font-size: 16px;
+	/* top: 25px; */
+	/* left: 42px; */
+	text-decoration: none;
+	padding-left: 42px;
+	position: relative;
+	box-sizing: border-box;
+}
+.banner0 .list .page a i{
+	font-style: normal;
+	position: absolute;
+	right: 30px;
+	top:0;
+}
+.banner0 .list .page:nth-child(1){
+	margin-top: 32px;
+}
+.banner0 .dot{
+	width: 250px;
+	height: 10px;
+	position: absolute;
+/* 	bottom: 15px;
+	left: 500px; */
+	/* 自动居中 */
+	bottom:15px;
+	margin: auto 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto; 
+}
+.banner0 .dot .dot0{
+	width: 42px;
+	height: 100%;
+	background: #fff;
+	margin-right:10px;
+	float: left;
+}
+.banner0 .dot .color{
+	background: red;
+}
+.banner0 .dot .dot0:nth-child(5){
+	margin-right: 0;
+}
+.sale{
+	width: 100%;
+	height: 150px;
+	margin-top: 20px;
+}
+.container2{
+	width: 1200px;
+	height: 150px;
+	margin: 0 auto;
+}
+.sale .list{
+	width: 293px;
+	height: 100%;
+	background: #FFFFFF;
+	float: left;
+	margin-right: 9px;
+}
+.sale .last{
+	margin-right: 0px;
+}
+.sale .list img{
+	width: 100%;
+	height: 100%;
+}
+.hot{
+	width: 100%;
+	height: 300px;
+	background: #F7F7F5;
+}
+.container{
+	width: 1200px;
+	height: 100%;
+	background: #F7F7F5;
+	/* 块元素在块元素中水平居中：外边距 */
+	margin: 0 auto;
+}
+/* 后代选择器：父级元素选择器 子级元素选择器 */
+.hot .top{
+	width: 100%;
+	height: 2px;
+	background: #F7F7F5;
+}
+.hot .bottom{
+	width: 100%;
+	height: 524px;
+	background:#F7F7F5;
+}
+.hot .top .title{
+	width: 647px;
+	height: 100%;
+	/* background: pink; */
+	float: left;
+	color: #333;
+	font-size: 26px;
+	text-align: right;
+	line-height: 72px;
+}
+.hot .top .more{
+	width: 46px;
+	height: 100%;
+	/* background: #999; */
+	float: right;
+}
+.hot .top .more a{
+	color: #333;
+	font-size: 18px;
+	/* 文字修饰：none没有修饰 */
+	text-decoration: none;
+	text-align: center;
+	line-height: 72px;
+}
+.hot .bottom .list{
+	width: 394px;
+	height: 510px;
+	background: #FFFFFF;
+	float: left;
+	margin-right: 9px;
+}
+.hot .bottom .last{
+	margin-right: 0px;
+}
+.hot .bottom .list img{
+	width: 230px;
+	height: 230px;
+	/* 转换块元素 */
+	display: block;
+	margin: 0 auto;
+	/* margin-left: 66px; */
+	margin-top: 48px;
+}
+.hot .bottom .list h3{
+	/* 宽度不设置，默认与父级元素宽度一致 */
+	/* 高度不设置，由内容自动撑开 */
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+}
+.hot .bottom .list p{
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+}
+.hot .bottom .list .money{
+	width: 100%;
+	text-align: center;
+	margin-top: 40px;
+	color: red;
+}
+body{
+	background: #F7F7F5;
+}
+/* 手机 */
+.phone{
+	width: 100%;
+	/* margin-top: 37px; */
+	background: #F7F7F5;
+}
+.phone .top{
+	width: 100%;
+	/* height: 74px; */
+	background: #F7F7F5;
+}
+.phone .top .title{
+	width: 647px;
+	height: 100%;
+	/* background: pink; */
+	float: left;
+	color: #333;
+	font-size: 26px;
+	text-align: right;
+	line-height: 72px;
+}
+.phone .top .more{
+	width: 46px;
+	height: 100%;
+	/* background: #999; */
+	float: right;
+}
+.phone .top .more a{
+	color: #333;
+	font-size: 18px;
+	/* 文字修饰：none没有修饰 */
+	text-decoration: none;
+	text-align: center;
+	line-height: 72px;
+}
+.phone .bottom{
+	width: 100%;
+	height: 771px;
+	background: #F7F7F5;
+}
+.phone .bottom .list{
+	width: 293px;
+	height: 384px;
+	background: #fff;
+	float: left;
+	margin-right: 9px;
+	margin-bottom: 9px;
+}
+/* 伪类选择器 */
+.phone .bottom .list:nth-child(3){
+	margin-right: 0;
+}
+.phone .bottom .list:nth-child(7){
+	margin-right: 0;
+}
+.phone .bottom .list:nth-child(8){
+	margin-right: 0;
+}
+.phone .bottom .list:nth-child(1){
+	width: 595px;
+}
+.phone .bottom .list:nth-child(7){
+	height: 187px;
+}
+.phone .bottom .list:nth-child(8){
+	height: 187px;
+}
+.phone .bottom .list .first-pic{
+	width: 100%;
+	height: 100%;
+}
+.phone .bottom .list .secone-pic{
+	width: 150px;
+	height: 150px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+.phone .bottom img{
+	width: 100%;
+	height: 100%;
+}
+.phone .bottom .list h3{
+	/* 宽度不设置，默认与父级元素宽度一致 */
+	/* 高度不设置，由内容自动撑开 */
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+}
+.phone .bottom .list p{
+	width: 100%;
+	text-align: center;
+	margin-top: 40px;
+}
+.phone .bottom .list .money{
+	width: 100%;
+	text-align: center;
+	margin-top: 40px;
+	color: red;
+}
+/* 配件 */
+.peijian{
+	width: 100%;
+	height: 820px;
+	/* 隐藏多余部分 */
+	overflow: hidden;
+}
+.peijian .biaoti1{
+	width: 100%;
+	height: 70px;
+	margin-top: 15px;
+}
+.num-box1{
+	width: 1199px;
+	height: 750px;
+	margin: 0 auto;
+}
+.num1{
+	width: 293px;
+	height: 369px;
+	background: #FFFFFF;
+	float: left;
+	border-right: 6px solid #F7F7F5;
+	border-bottom: 8px solid #F7F7F5;
+}
+.flag{
+	width: 592px;
+	height: 369px;
+}
+.img1{
+	width: 592px;
+	height: 369px;
+	margin: 0 auto;
+}
+.img2{
+	width: 180px;
+	height: 180px;
+	margin: 30px 55px 30px 55px;
+}
+.moble1{
+	background: #FFFFFF;
+	text-align: center;
+	font-size: 15px;
+}
+.peizhi1{
+	background:#FFFFFF;
+	text-align: center;
+	font-size: 10px;
+	margin-top: 15px;
+}
+.price1{
+	background: #FFFFFF;
+	text-align: center;
+	margin-top: 20px;
+	font-size: 15px;
+	color: #F51919;
+}
+.one{
+	font-size: 25px;
+	text-align: center;
+	line-height: 70px;
+	float: left;
+	margin-left: 628px;
+}
+.two{
+	font-size: 10px;
+	text-align: right;
+	line-height: 70px;
+	float: right;
+	margin-right:95px;
+}
+.three{
+	font-size: 10px;
+	text-align: right;
+	line-height: 70px;
+	float: right;
+	margin-right:20px;
+}
+a{
+	color: black;
+	text-decoration: none;
+}
+/* 网页底部 */
+.bottom{
+	width: 100%;
+	height: 549px;
+	margin-top: 90px;
+	background: #FFFFFF;
+}
+.bottom .container{
+	width: 1200px;
+	height: 100%;
+	background: #FFFFFF;
+	/* 块元素在块元素中水平居中：外边距 */
+	margin: 0 auto;
+	
+}
+.bottom .dakuang{
+	width: 100%;
+	height: 189px;
+	background: #FFFFFF;
+	overflow: hidden;
+}
+.bottom .fuwu{
+	width: 100%;
+	height: 89px;
+	/* bug 使用overflow */
+	margin-top: 30px;
+	background: #FFFFFF;
+	border-bottom: 1px solid #DEDEDE;
+	overflow: hidden;
+}
+.bottom .fuwu .guanfang{
+	width: 300px;
+	height: 28px;
+	background: #FFFFFF;
+	margin-top:30px;
+	float: left;
+
+}
+.bottom .fuwu .guanfang img{
+	height: 28px;
+	margin-left: 99px;
+	float: left;
+}
+.bottom .fuwu .guanfang a{
+	font-size: 20px;
+	line-height: 28px;
+	margin-left: 6px;
+}
+.bottom .shouhou{
+	width: 100%;
+	height: 260px;
+	background: #FFFFFF;
+	overflow: hidden;
+	border-bottom: 1px solid #DEDEDE; 
+}
+/* .bottom .shouhou .pay{
+	width: 27px;
+	height: 27px;
+	background: green;
+	margin: 0 auto;
+	background-image: url('../img/官方商城.png');
+	background-position: -33px -87px;
+} */
+.bottom .shouhou .shukuang{
+	width: 75px;
+	height: 165px;
+	background: #FFFFFF;
+	float: left;
+	margin-right: 130px;
+}
+.bottom .shouhou .shukuang .top{
+	width: 100%;
+	height: 40px;
+	background:#FFFFFF;
+	text-align: center;
+	font-size: 15px;
+}
+.bottom .shouhou .shukuang a{
+	display: block;
+	font-size: 12px;
+	margin-top: 8px;
+}
+.bottom .shouhou .shukuang:nth-child(5){
+	margin-right: 0;
+}
+.bottom .shouhou .talk{
+	width: 200px;
+	height: 130px;
+	background: #fff;
+	float: right;
+}
+.bottom .talk .duihuakuang{
+	width: 35px;
+	height: 30px;
+	margin-left: 30px;
+	margin-right: 10px;
+	float: left;
+
+}
+.bottom .duihuakuang img{
+	width: 100%;
+	height: 100%;
+}
+h2{
+	color: #528DDC;
+}
+.bottom .talk .tel{ 
+	margin-top: 20px;
+	width: 165px;
+	height: 20px;
+	margin-left: 30px;
+	font-size: 22px;
+}
+.bottom .talk .hour{
+	margin-top: 15px;
+	font-size: 10px;
+	margin-left: 65px;
+	color: #C8B2AA;
+}
+.bottom .banquan{
+	width: 100%;
+	height: 99px;
+	background: #fff;
+	color: #333333;
+}
+.bottom .banquan p{
+	font-size: 13px;
+	float: left;
+	line-height: 99px;
+}
+.bottom .banquan a{
+	color: #333333;
+	text-decoration: none;
+}
+.bottom .banquan .jinghui img{
+	margin-top: 40px;
+	margin-left: 5px;
+	width: 20px;
+	height: 20px;
+	float: left;
+}
+.bottom .banquan .right{
+	width: 170px;
+	height: 20px;
+	float: right;
+	background: #FFFFFF;
+	margin-top: 40px;
+}
+.bottom .banquan .right .guanzhu{
+	width: 70px;
+	height: 100%;
+	background: #FFFFFF;
+	font-size: 12px;
+	float: left;
+	line-height:20px;
+}
+.bottom .banquan .right .china{
+	width: 100px;
+	height: 100%;
+	background: #FFFFFF;
+	float: right;
+	line-height:20px;
+}
+.bottom .banquan .right .china .earh{
+	width: 20px;
+	height: 20px;
+	background: #FFFFFF;
+	float: left;
+	margin-left: 20px;
+}
+.guding{
+	width: 50px;
+	height:150px; 
+	background: blue;
+	position: fixed;
+	right: 0;
+	bottom: 50px;
+}
+.guding .xiaokuang{
+	width: 100%;
+	height: 50px;
+}

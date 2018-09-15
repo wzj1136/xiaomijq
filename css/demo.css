@@ -1,0 +1,42 @@
+/*
+* @Author: lenovo
+* @Date:   2018-07-30 14:36:22
+* @Last Modified by:   lenovo
+* @Last Modified time: 2018-08-06 08:45:53
+*/
+h1{
+	/*颜色 */
+	color: red;
+	/* 字体大小 */
+	font-size: 60px;
+}
+.first{
+	/* 宽 */
+	width: 200px;
+	/* 高 */
+	height: 200px;
+	/* 背景颜色 */
+	background-color: green;
+}
+.second{
+	width: 200px;
+	height: 300px;
+	background: yellow;
+}
+img{
+	width: 100px;
+	height: 100px;
+	}
+.three{
+	background: blue;
+}
+#con-text{
+	background: green;
+	height: 50px;
+	text-align: center;
+}
+.one{
+	width: 800px;
+	height: 100px;
+	background: red;
+}

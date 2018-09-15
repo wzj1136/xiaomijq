@@ -1,0 +1,214 @@
+/*
+* @Author: lenovo
+* @Date:   2018-08-05 13:20:08
+* @Last Modified by:   lenovo
+* @Last Modified time: 2018-08-07 22:07:47
+*/
+*{
+	margin: 0;
+	padding: 0;
+}
+.tuwen{
+	width: 800px;
+	margin: 0 auto;
+	background: red;
+	overflow: hidden;
+}
+ul{
+	width: 200px;
+	height: 100px;
+	background: yellow;
+	float: left ;
+	margin-left: 20px;
+	list-style: none;
+	/* overflow: hidden; */
+}
+li img{
+	width: 50px;
+	height: 50px;
+	float: left;
+}
+li h4{
+	text-align: center;
+	margin-top: 30px;
+}
+li p{
+	text-align: center;
+}
+.one{
+	width: 800px;
+	background: red;
+	overflow: hidden;
+}
+.one-1{
+	width: 300px;
+	height: 100px;
+	background: green;
+	float: left;
+}
+.two{
+	width: 300px;
+	height: 100px;
+	background: blue;
+}
+/* 单行文本超出 */
+.three{
+	width: 100px;
+	height: 50px;
+	overflow: hidden;
+	/* 文本超出，省略号代替 */
+	text-overflow: ellipsis;
+	/* 设置如何处理元素内的空白：规定段落中文本不进行换行 */
+	white-space: nowrap;
+}
+/* 可以使多行文字在超出框的情况下显示省略号 */
+.four{
+	width:400px ;
+		/* height的高度是line-height的倍数 */
+	height: 100px;
+	/* 必须结合的属性，将对象作为弹性伸缩盒子模型显示 */
+	display: -webkit-box;
+	/* 用来限制在一个块元素中显示的文本行数 */
+	-webkit-line-clamp: 4;
+	/* 必须结合的属性，设置或检索伸缩盒对象的子元素的排列方式 */
+	-webbit-box-orient: vertical;
+	/* 超出部分隐藏 */
+	overflow: hidden;
+	/* 可以用来多行文本的情况下,用省略号隐藏超出范围的文本 */
+	text-overflow: ellipsis;
+
+}
+/* 群组选择器 */
+.five,.six,.seven,.eight{
+	width: 500px;
+	height: 200px;
+	margin: 0 auto;
+	background: pink;
+	margin-bottom: 60px;
+	/* 需要过渡的样式名称，以及过渡时间	*/
+	transition: transform .5s;
+	/* 需要过渡的样式名称 */
+	/* transition-property: width; */
+	/* 过渡持续的时间 */
+	/* transition-duration: 1s; */
+	/* 过渡的速度曲线 linear匀速 ease-out先慢后快/贝塞尔曲线 */
+	/* transition-timing-function: ease-out; */
+	/* 过度的延迟时间/过渡开始的时间 */
+	transition-delay: 1s;
+}
+.five:hover{
+	/* 转换：平移（水平平移的距离  垂直平移的距离） 向下向右为正值 */
+	/* transform: translate(20px,20px); */
+	/* 水平平移的距离 */
+	transform: translateX(50px);
+	/* 垂直平移的距离 */
+	/* transform: translateY(20px); */
+}
+.five .son{
+	width: 500px;
+	height:0px;
+}
+/* 鼠标移入父级元素，让子元素如何变化 */
+.five:hover .son{
+	width: 500px;
+	height: 100px;
+	background-color: blue;
+}
+.six:hover{
+	/* 转换：旋转 顺时针为正值 逆时针为负值*/
+	transform:rotate(45deg); 
+}
+.seven:hover{
+	/* 缩放 >11放大，<1缩小 */
+	/* transform: scale(1.2, 1.2); */
+	/* 水平样式 */
+	transform: scaleX(1.5);
+	/* 垂直样式 */
+	/* transform: scaleY(2); */
+}
+.eight:hover{
+	/* 转换：斜切（水平斜切的角度/垂直斜切的角度） */
+	/* transform: skew(20deg, 30deg); */
+	/* 向左 */
+	/* transform: skewX(15deg); */ 
+	/* 向上 */
+	transform: skewY(15deg);
+}
+.box,.box1{
+	
+	height: 130px;
+	width: 200px;
+	background: red;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	position: relative;
+}
+.box:before{
+	content: "";
+	width: 50px;
+	height: 50px;
+	background: green;
+	position: absolute;
+	top: -25px;
+	left: 30px;
+	transform: rotate(45deg);
+}
+.box1{
+	height: 130px;
+	width: 200px;
+	background: red;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	position: relative;
+	transform: skewX(45deg);
+}
+.list{
+	width: 1226px;
+	overflow: hidden;
+	background: #ccc;
+	margin: 0 auto;
+	margin-bottom: 50px;
+
+}
+.list ul li{
+	width: 234px;
+	height: 300px;
+	margin-right: 14px;
+	margin-bottom: 14px;
+	background-color: #fff;
+	float: left;
+	list-style: none;
+}
+.box2{
+	width: 600px;
+	height: 400px;
+	background: red;
+	margin: 0 auto;
+	position: relative;
+}
+.box2 ul{
+	width: 200px;
+	height: 400px;
+	background: blue;
+	margin-left: 0;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	position: relative;
+}
+.box2 ul li{
+	margin-top: 15px;
+	width: 200px;
+	height: 60px;
+	background: yellow;
+	border: 1px solid black;
+}
+.box2 ul  li .right{
+	width: 400px;
+	height: 300px;
+	background: pink;
+	position: absolute;
+	top: 0px;
+	left: 20px;
+	z-index: 100;
+}

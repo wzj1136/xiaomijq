@@ -1,0 +1,16 @@
+/*
+* @Author: lenovo
+* @Date:   2018-08-03 16:41:15
+* @Last Modified by:   lenovo
+* @Last Modified time: 2018-08-05 16:28:32
+*/
+input{
+	width: 245px;
+	height: 50px;
+	border: 1px solid #ccc;
+	/* 点击时的轮廓 */
+	/* outline: none; */
+	/* 点击轮廓颜色 */
+	outline-color: red;
+	font-size: 20px;
+}
